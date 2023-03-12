@@ -1,5 +1,14 @@
 <p>Count works!</p>
-<p>@Input @Output ile</p>
-<h3 style="color: red;">{{number}}</h3>
-<p>Service ile</p>
-<h3 style="color: red;">{{countService.number2}}</h3>
+<div class="row">
+  <div class="col-md-4">
+    <p>@Input @Output ile</p>
+    <h3 style="color: red">{{ number }}</h3>
+  </div>
+  <div class="col-md-4">
+    <p>Service ile</p>
+    <h3 style="color: red">{{ countService.number2 }}</h3>
+  </div>
+  <div class="col-md-4">
+    <h3 style="color: red">{{ number3$ | async }}</h3>
+  </div>
+</div>
