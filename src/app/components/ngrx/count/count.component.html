@@ -1,14 +1,14 @@
-<p>Count works!</p>
-<div class="row">
+<div class="row m-4">
   <div class="col-md-4">
-    <p>@Input @Output ile</p>
+    <p>with @Input @Output</p>
     <h3 style="color: red">{{ number }}</h3>
   </div>
   <div class="col-md-4">
-    <p>Service ile</p>
+    <p>with Service</p>
     <h3 style="color: red">{{ countService.number2 }}</h3>
   </div>
   <div class="col-md-4">
+    <p>with Ngrx</p>
     <h3 style="color: red">{{ number3$ | async }}</h3>
   </div>
 </div>
