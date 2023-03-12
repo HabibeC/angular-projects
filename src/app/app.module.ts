@@ -3,14 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StoreModule } from '@ngrx/store';
+import { AddCountComponent } from './components/ngrx/add-count/add-count.component';
+import { CountComponent } from './components/ngrx/count/count.component';
+import { MainCountComponent } from './components/ngrx/main-count/main-count.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AddCountComponent,
+    CountComponent,
+    MainCountComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StoreModule.forRoot({}, {})
   ],
   providers: [],
   bootstrap: [AppComponent]
