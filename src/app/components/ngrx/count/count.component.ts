@@ -1,3 +1,4 @@
+import { CountService } from './../../../services/count.service';
 import { Component, Input } from '@angular/core';
 
 @Component({
@@ -7,7 +8,7 @@ import { Component, Input } from '@angular/core';
 })
 export class CountComponent {
   @Input() number: number = 0;
-  constructor() {}
+  constructor(public countService:CountService) {}
 
   ngOnInit(): void {}
 
