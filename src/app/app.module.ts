@@ -8,13 +8,21 @@ import { StoreModule } from '@ngrx/store';
 import { AddCountComponent } from './components/ngrx/add-count/add-count.component';
 import { CountComponent } from './components/ngrx/count/count.component';
 import { MainCountComponent } from './components/ngrx/main-count/main-count.component';
+import { NavbarComponent } from './components/e-ticaret/navbar/navbar.component';
+import { LayoutsComponent } from './components/e-ticaret/layouts/layouts.component';
+import { HomeComponent } from './components/e-ticaret/home/home.component';
+import { SelectionComponent } from './components/selection/selection.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddCountComponent,
     CountComponent,
-    MainCountComponent
+    MainCountComponent,
+    NavbarComponent,
+    LayoutsComponent,
+    HomeComponent,
+    SelectionComponent
   ],
   imports: [
     BrowserModule,
