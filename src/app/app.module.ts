@@ -1,3 +1,4 @@
+import { BasketsReducer } from './store/reducers/baskets.reducer';
 import { CounterReducer } from './store/reducers/counter.reducer';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -22,14 +23,17 @@ import { SelectionComponent } from './components/selection/selection.component';
     NavbarComponent,
     LayoutsComponent,
     HomeComponent,
-    SelectionComponent
+    SelectionComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot({number3:CounterReducer})
+    StoreModule.forRoot({
+      number3: CounterReducer,
+      baskets: BasketsReducer,
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
